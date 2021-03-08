@@ -142,16 +142,24 @@ nav {
 
 nav .nav-title {
   color: var(--clr-white);
-  font-size: 1.5rem;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 1px;
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
 }
 
+nav .nav-title-icon {
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 900px) {
-  nav p {
+  nav .nav-title {
     font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  nav .nav-title-icon {
+    margin-right: 0px;
   }
 }
 
