@@ -5,7 +5,8 @@ const Navbar = () => {
   return (
     <nav>
       <p className='nav-title'>
-        <span className='nav-title-icon'>⚛️</span> React Starter Template
+        <span className='nav-title-icon'>⚛️</span>
+        React Starter Template
       </p>
       <div className='nav-links'>
         <Link to='/'>Home</Link>
