@@ -132,6 +132,34 @@ p {
 /*  global classes */
 
 /* section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #5fec87, #f79d00);
+}
+
+nav .nav-title {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  nav p {
+    font-size: 1.5rem;
+  }
+}
+
+nav a {
+  color: var(--clr-white);
+  margin: 0 10px;
+}
+
 .section,
 .container {
   width: 90vw;
