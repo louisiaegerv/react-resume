@@ -2,18 +2,18 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Error from './components/Error'
-import Home from './components/Home'
+import Jobs from './components/Jobs'
 import About from './components/About'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Router>
         <Navbar />
         <div className='container'>
           <Switch>
             <Route exact path='/'>
-              <Home />
+              <Jobs />
             </Route>
             <Route path='/about'>
               <About />
@@ -24,7 +24,7 @@ const App = () => {
           </Switch>
         </div>
       </Router>
-    </div>
+    </>
   )
 }
 

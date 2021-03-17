@@ -7,11 +7,11 @@ const Navbar = () => {
       <Link to='/'>
         <p className='nav-title'>
           <span className='nav-title-icon'>⚛️</span>
-          React Starter Template
+          React Resume
         </p>
       </Link>
       <div className='nav-links'>
-        <Link to='/'>Home</Link>
+        <Link to='/'>Resume</Link>
         <Link to='/about'>About</Link>
       </div>
     </nav>

@@ -1,16 +1,16 @@
-# React Starter Template ⚛️
+# React Resume Component ⚛️
 
-[🔥 View it live here 🔥](https://react-starter-template-ljfiv.netlify.app/)
+[🔥 View it live here 🔥](https://react-resume-ljfiv.netlify.app/)
 
-A React web app template to start coding in React without all the extra fluff from the "create-react-app" starter project.
-
-Also includes some starter CSS to quickly throw together simple MVPs.
-
-Clone and start coding in React today.
+A simple resume web app component made with React.
 
 Features include:
 
+- React Hooks (useState & useEffect)
+- API Calls for Data with Async/Await
+  - Dynamic Content loading
+- Responsive Web Layout for Mobile and Desktop
 - Routing with React Router
   - Error handling for invalid pages
 
-[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-Starter-Template.png?raw=true)](https://react-starter-template-ljfiv.netlify.app/)
+[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-Resume-img.png?raw=true)](https://react-resume-ljfiv.netlify.app/)
