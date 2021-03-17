@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { FaAngleDoubleRight } from 'react-icons/fa'
-// ATTENTION!!!!!!!!!!
-// I SWITCHED TO PERMANENT DOMAIN
+
+import CurrentJob from './CurrentJob'
+import JobTitleList from './JobTitleList'
+
 const url = 'https://course-api.com/react-tabs-project'
+
 const Jobs = () => {
   const [jobs, setJobs] = useState([])
   const [loading, setLoading] = useState(true)
@@ -39,42 +41,6 @@ const Jobs = () => {
         </section>
       )}
     </>
-  )
-}
-
-const JobTitleList = ({ jobs, setCurrentJobIndex, currentJobIndex }) => {
-  return (
-    <aside className='job-selector'>
-      {jobs.map((job, index) => {
-        return (
-          <button
-            className={`job-btn ${index === currentJobIndex && 'active-btn'}`}
-            onClick={() => setCurrentJobIndex(index)}
-          >
-            {job.company}
-          </button>
-        )
-      })}
-    </aside>
-  )
-}
-
-const CurrentJob = ({ job }) => {
-  console.log(job)
-  return (
-    <main className='current-job-content'>
-      <h3 className='job-title'>{job.title}</h3>
-      <p className='company'>{job.company}</p>
-      <p className='dates'>{job.dates}</p>
-      {job.duties.map((duty) => {
-        return (
-          <article className='job-duty-item'>
-            <FaAngleDoubleRight />
-            <p>{duty}</p>
-          </article>
-        )
-      })}
-    </main>
   )
 }
 
